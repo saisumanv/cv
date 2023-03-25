@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%Author: Venkat Sai Suman Lamba Karanam
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+%\usepackage{href}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\newcommand{\refEmail}[1]{mailto:\href{mailto:#1}{#1}}
+
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\name{Venkat Sai Suman}{Lamba Karanam} % Your first name
+%\familyname{Lamba Karanam} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{School of Computing}{University of Nebraska-Lincoln}
+%\mobile{+1 123 456 8911}
+%\fax{(000) 111 1113}
+ 
+%\email{abc@gmail.com} 
+\email{lkvenkatsaisuman@gmail.com} 
+%An
+%\social[test][googlescholar]{suman2135}
+
+\homepage{www.saisuman.org}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%socials%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+\social[googlescholar]{suman2135}     
+%\social[linkedin]{john.doe}    
+
+
+%\social[linkedin][www.linkedin.com]{name}
+
+
+\photo[70pt][0.3pt]{Picture1.png} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2017--present}{PhD, Computer Science \& Engineering}{University of Nebraska-Lincoln}{Lincoln}{NE}
+{Large Data Transfers, Optimization in the Networks, Realtime Machine Learning in the Networks, Software-defined Networks, Distributed Computing}  % Arguments not required can be left empty
+
+\cventry{2013--2015 :}{Master of Science, Computer Science \& Engineering}{University of Nebraska-Lincoln}{Lincoln}{NE}{Distributed and Cluster Computing}{}
+%{Advanced exposure to various areas of computer science along with a one and half year research project on Reversible Logic Synthesis.}
+%\cvitem{CGPA :}{7.96/10}
+\cventry{2009--2013 :}{Bachelor of Technology, Information Technology}{Jawaharlal Nehru Technological University}{Hyderabad, India}{}{}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Publications}
+% \subsection{Journal Article(Accepted)}
+% \cventry{2019}{\textbf{Pratik Dutta}, Sriparna Saha, Sanket Pai and Aviral Kumar}{}{Protein-protein Interaction based Generative Model for Improving Gene Clustering}{In \textit{\textbf{Scientific Reports-Nature}} (\textbf{Impact Factor: 4.12)}}{}
+
+% \subsection{Journal Articles}
+% \newbibliography{journal}
+% \bibliographystyle{journal}{plainyrrev}
+% \nocite{journal}{*}
+% \bibliography{journal}{journal}
+% {\large \textsc{Refereed Journal Articles}}
+% \subsection{Communicated Journal Article}
+% \cventry{2020}{Pratik Dutta, Aditya Prakash Patra, and Sriparna Saha}{}{DeePROG: An Attention based Deep Multi-modal Architecture for Disease Gene Prognosis}{In \textit{IEEE Transactions on Biomedical Engineering}}{}
+
+
+% \subsection{In Conference Proceedings}
+\newbibliography{conference}
+\nocite{conference}{*}
+\bibliographystyle{conference}{plainyrrev}
+\bibliography{conference}{conference}
+{\large \textsc{Refereed Conference Publications}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research Experience}
+\subsection{Adobe Systems, CA}
+\cventry{Summer-Fall, 2021}{\textit{Graduate Researcher}}{}{}{}
+{Just-in-time (JIT) streaming optimization of data transfers for large-scale machine learning workloads.
+}
+\cventry{Spring, 2016}{\textit{Graduate Researcher}}{}{}{}
+{Hardware Isolation-based  Security measures using Intel SGX and ARM TrustZone technologies.
+}
+\subsection{UNL, NE}
+\cventry{2019 -- present}{\textit{Research Assistant}}{}{}{}
+{Research in network optimization, software-defined networks (SDN), large data transfers, and machine learning. 
+}
+\cventry{Summer 2021 \& 2022}{\textit{Graduate Researcher}}{}{}{}
+{Developed frontend and backend applications for automatic irrigation project with Institute of Agriculture and Natural Resources (IANR). 
+}
+%\cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
+
+%----------------------------------------------------------------------------------------
+%	Fellowships \& Awards
+%----------------------------------------------------------------------------------------
+
+\section{Fellowships \& Awards}
+
+\cvitem{2022}{\textit{\textbf{SciAuth Fellowship}} with SciAuth program funded by NSF, as a PhD Student Fellow.}
+\cvitem{2017}{\textbf{Graduate Teaching Award}, School of Computing, UNL.}
+\cvitem{2015}{\textbf{Award for Contribution to Students}, Teaching Council \& Parent's choice, UNL.}
+
+%----------------------------------------------------------------------------------------
+%	Academic achievements
+%----------------------------------------------------------------------------------------
+\section{Teaching}
+\cvitem{2022}{\textbf{Guest Lecturer} for \textbf{CSCE862: Advanced Topics in Networks: Block Chain}}
+\cvitem{2017-2018}{\textbf{Instructor of Record} for \textbf{CSCE:236: Embedded Systems Applications,} School of Computing, UNL}
+\cvitem{2015}{\textbf{Guest Lecturer} for \textbf{CSCE863: Communication Networks}}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical skills}
+
+\cvitem{Programming Languages \& Libraries}{Python, PyTorch, keras, C++, Advanced JAVA, Javascript, Networking in Linux/Unix, Software-defined Networks (SDN)}
+\cvitem{Hardware Technologies}{Universal Software Radio Peripheral (USRP), Embedded Devices (IoT)}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Position of Responsibility SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Position of Responsibility}
+\cventry{2015}{Judge}{ACM Regional Programming Contest}{Lincoln}{}{}
+\cventry{2020}{Volunteer}{International Conference on Computer Communications}{}{}{}
+\cventry{2019}{Graduate Curriculum Representative}{UNL}{School of Computing}{}{}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Teaching Assistantship SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Assistantship}
+\cventry{2022 - 2021}{CSCE863: Advanced Topics in Networks: Block Chain}{}{UNL}{}{}
+\cventry{2022 -  2021 :}{CSCE952: Advanced Computer Networks}{}{UNL}{}{}
+\cventry{Others:}{CSCE877: Cryptography Techniques, CSCE851: Operating Systems Principles, CSCE863: Communication Networks}{}{UNL}{}{}
+
+
+
+%\section{Referees}
+
+
+\section{References}
+\begin{tabular}{lr}
+% Referee 1
+\begin{minipage}[t]{3in}
+\textbf{Dr. Byrav Ramamurthy}\\
+\textit{Professor, School of Computing}\\
+UNL\\
+\refEmail{ramamurthy@unl.edu}%{ramamurthy@unl.edu}
+\end{minipage}
+&
+% Referee 2
+\begin{minipage}[t]{3in}
+\textbf{Dr. Haishun Yang}\\
+\textit{Professor, Department of Agronomy and Horticulture \&} 
+\textit{Institute of Agriculture and Natural Resources {(IANR)}}\\
+%\Telefon\ +(601) 877-6236\\
+UNL\\
+\refEmail{hyang2@unl.edu}
+\end{minipage}
+% \\
+% % Referee 3
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% &
+\end{tabular}
+\end{document}
